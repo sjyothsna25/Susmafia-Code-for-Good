@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+{% load static %}
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="{% static 'resources/styles.css' %}">
+  <script src="https://kit.fontawesome.com/25f6993cca.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- <img class="logo" src="resources/SusMafia Logo.png" alt="SusMafia Logo"> -->
+    <img class="mockup" src="{% static 'resources/phonemockup.png' %}" alt="">
+    <div class="phone">
+      <button id="no" class="swiper swiperleft" type="button" name="button"><img class="swiperlogo" src="{% static 'resources/cancel.png' %}" alt=""></button>
+      <div class="phonecontent">
+        <img class="profilepic" src="{% static 'resources/profilepic.png' %}" alt="">
+        <div class="basicinfoleft">
+          <p>id: <span id="m_name">{{applicant.id}}</span> </p>
+          <p>Name: <span id="name">{{applicant.name}}</span> </p>
+          <p>Date of Birth: <span id="m_dob">{{dob}}</span> </p>
+          <p>E-mail: <span id="m_email">{{applicant.email}}</span> </p>
+        </div>
+        <div class="basicinforight">
+          <p>Gender: <span id="m_gender">{{applicant.gender}}</span> </p>
+          <p>Mobile: <span id="m_mobile">{{applicant.phone_number}}</span> </p>
+          <p>Applying for: <span id="m_apply"></span> </p>
+        </div>
+        <div class="allinfo">
+          <p>
+            Highest Qualifciation:
+            <span id="m_qual">
+              {{applicant.highest_qualification}}
+            </span>
+          </p>
+          <p>
+            Years of Experience:
+            <span id="m_exp">
+              {{applicant.yoe}}
+            </span>
+          </p>
+          <!--<p>
+            CGPA:
+            <span id="m_cgpa"></span>
+          </p>-->
+          <p>
+            Bio:
+            <span id="m_bio">{{applicant.linkedin}}</span>
+          </p>
+          <p>
+            Skills:
+            <span id="m_skill">{{applicant.skills}}</span>
+          </p>
+        </div>
+      </div>
+      <button class="swiper swiperright" id="yes" type="button" name="button"><img class="swiperlogo" src="{% static 'resources/checked.png' %}" alt=""></button>
+    </div>
+    <script src="{% static 'resources/script.js' %}" charset="utf-8"></script>
+</body>
+
+</html>

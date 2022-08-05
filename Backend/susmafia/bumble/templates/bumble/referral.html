@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Verify Referral</title>
+
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'vendor/icofont/icofont.min.css' %}" rel="stylesheet">
+    <link href="{% static 'vendor/aos/aos.css' %}" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+</head>
+<body id="signin_body">
+    
+    <!-- ======= Header ======= -->
+  <header id="header_signin" class="fixed-top">
+    <div class="container-fluid d-flex justify-content-between align-items-center">
+
+      <h1 class="logo"><a href="index.html"></a></h1>
+      <nav class="nav-menu d-none d-lg-block" id="nav_signin">
+        <ul>
+          <li class="active"><a href="../maintenance">Home</a></li>
+          <li><a href="../maintenance">About us</a></li>
+          <li><a href="../maintenance">Gallery</a></li>
+          <li><a href="../maintenance">Opportunities</a></li>
+          <li><a href="../maintenance">Contact</a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+
+      <div class="header-social-links" id="signin_icon">
+        <a href="#" class="twitter"><i class="icofont-twitter"></i></a>
+        <a href="#" class="facebook"><i class="icofont-facebook"></i></a>
+        <a href="#" class="instagram"><i class="icofont-instagram"></i></a>
+        <a href="#" class="linkedin"><i class="icofont-linkedin"></i></i></a>
+      </div>
+
+    </div>
+
+  </header><!-- End Header -->
+
+  <!-- Sign In Div -->
+    <div class="signin_div" style="height: 300px; top: 200px">
+        <div class="signin_signup_options">
+            <a href="../login" class="signin_left">Sign In</a>
+            <a href="" class="signup_right" id="signin_active">Enter Referral</a>
+        </div>
+        <form action="" class="signin_form" method="POST">
+            {% csrf_token %}
+            <label for="your_code"></label>  
+            <input type="text" placeholder="Referral" id="form_username" name="your_code" required>
+            <button type="submit" class="form_submit">Verify Referral</button>
+        </form>
+        <p class="signin_signup_alternatives">Do not have an referral? Head <a onClick="javascript:window.open('mailto:ani@susmafia.org', 'mail');event.preventDefault()" href="mailto:ani@susmafia.org">here</a></p>
+    </div>
+
+    <script src="{% static 'assets/vendor/jquery/jquery.min.js' %}"></script>
+
+    <script src="{% static 'assets/js/main.js' %}"></script>
+</body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html>
+<body>
+
+  <div class="container py-5">
+  	<h1>Register</h1>
+    <form action = "" method = "POST">
+        <label for="your_code">Your code: </label>
+        <input id="your_code" type="text" name="your_code">
+        <input type="submit" value="OK">
+    </form>
+  </div>
+
+</body>
+</html> -->

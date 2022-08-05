@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+  {% load crispy_forms_tags %}
+
+  <!--Register-->
+  <div class="container py-5">
+  	<h1>Profile</h1>
+    <form action = "" method = "POST">
+        {% csrf_token %}
+        <label for="your_code">Name: </label>
+        <input id="your_code" type="text" name="your_code">
+        <label for="your_code">Phone Number: </label>
+        <input id="your_code" type="text" name="your_code">
+        <label for="your_code">Gender: </label>
+        <input id="your_code" type="text" name="your_code">
+        <label for="your_code">Dob: </label>
+        <input id="your_code" type="text" name="your_code">
+        <label for="your_code">Your code: </label>
+        <input id="your_code" type="text" name="your_code">
+        <label for="your_code">Your code: </label>
+        <input id="your_code" type="text" name="your_code">
+        <input type="submit" value="OK">
+    </form>
+  </div>
+
+</body>
+</html>

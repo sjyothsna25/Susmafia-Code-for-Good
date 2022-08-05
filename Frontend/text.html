@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style1.css">
+
+
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+    <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css">
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+    <title>User Profile</title>
+</head>
+
+<body>
+
+
+
+
+
+    <!-- ======= Header ======= -->
+    <header id="header_signin" class="fixed-top">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+
+            <h1 class="logo">
+                <a href="index.html"></a>
+            </h1>
+            <nav class="nav-menu d-none d-lg-block" id="nav_signin">
+                <ul>
+                    <li class="active"><a href="">Home</a></li>
+                    <li><a href="">About us</a></li>
+                    <li><a href="">Gallery</a></li>
+                    <li><a href="">Opportunities</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </nav>
+            <!-- .nav-menu -->
+
+            <div class="header-social-links" id="signin_icon">
+                <a href="#" class="twitter"><i class="icofont-twitter"></i></a>
+                <a href="#" class="facebook"><i class="icofont-facebook"></i></a>
+                <a href="#" class="instagram"><i class="icofont-instagram"></i></a>
+                <a href="#" class="linkedin"><i class="icofont-linkedin"></i></i></a>
+            </div>
+
+        </div>
+
+    </header>
+    <!-- End Header -->
+
+
+    </script>
+    <div class="container">
+        <header>User Profile</header>
+
+        <form action="#" method="POST">
+            <!-- {% csrf_token %} -->
+            <div class="form first">
+                <div class="details personal">
+                    <span class="title">Personal Details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Full Name</label>
+                            <input type="text" placeholder="Enter your name" name="fullname" id="fullname" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Date of Birth</label>
+                            <input type="date" placeholder="Enter birth date" name="dob" id="dob" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Email</label>
+                            <input type="text" placeholder="Enter your email" name="email" id="email" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Gender</label>
+                            <select required>
+                                <option disabled selected>Select gender</option>
+                                <option>Male</option>
+                                <option>Female</option>
+                                <option>Others</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Mobile Number</label>
+                            <input type="number" placeholder="Enter mobile number" name="mob" id="mob" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="details ID">
+                    <span class="title">Identity Details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Highest Qualification</label>
+                            <input type="text" placeholder="Highest Qualification" name="hq" id="hq" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Years Of Experience</label>
+                            <input type="number" placeholder="Years Of Experience" name="yoe" id="yoe" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Skills</label>
+                            <input type="text" multiple size="50" placeholder="Skills" name="skills" id="skills" required>
+                        </div>
+
+                        <div class="input-field">
+                            <!-- <label>CGPA</label>
+                            <input type="number" placeholder="cgpa" name="cgpa" id="cgpa"> -->
+                            <div class="custom-select" style="width:200px;">
+                                <select>
+                                  <option value="0">Sectors:</option>
+                                  <option value="1">Water</option>
+                                  <option value="2">Fire</option>
+                                  <option value="3">Air</option>
+                                  <option value="4">Earth</option>
+                                  <option value="5">Heart</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="input-field">
+                            <label>LinkedIn URL</label>
+                            <input type="text" placeholder="LinkedIn URL" name="url" id="url">
+                        </div>
+                    </div>
+
+
+
+
+
+                    <!-- <form action="/action_page.php"> -->
+                    <label for="img">Select image:</label>
+                    <input type="file" id="img" name="img" accept="image/*">
+                    <!-- <input type="submit"> -->
+
+                    <button class="nextBtn">
+                        <span class="btnText">Next</span>
+                        <i class="uil uil-navigator"></i>
+                    </button>
+
+                </div>
+
+
+            </div>
+
+
+            <!--<script src="script.js"></script>-->
+</body>
+
+</html>

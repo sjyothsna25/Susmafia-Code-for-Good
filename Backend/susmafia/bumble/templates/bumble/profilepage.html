@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Profile</title>
+
+    </head>
+    <body>
+      <li>
+          Matches:
+          <ul>
+              {% if profile %}
+                  <li>{{ profile.name }}</li>
+                  <li>{{ profile.email }}</li>
+                  <li>{{ profile.phone_number }}</li>
+                  <li>{{ profile.gender }}</li>
+                  <li>{{ profile.dob }}</li>
+                  <li>{{ profile.yoe }}</li>
+                  <li>{{ profile.linkedin }}</li>
+
+              {% endif %}
+          </ul>
+      </li>
+    </body>
+</html>

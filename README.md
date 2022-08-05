@@ -1,2 +1,2 @@
-# Susmafia-Code for Good
+# SusMafia-Code for good
  

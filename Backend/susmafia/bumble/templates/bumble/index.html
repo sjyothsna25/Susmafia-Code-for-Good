@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Sign In</title>
+
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'vendor/icofont/icofont.min.css' %}" rel="stylesheet">
+    <link href="{% static 'vendor/aos/aos.css' %}" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+</head>
+
+<body id="signin_body">
+    
+    <!-- ======= Header ======= -->
+    <header id="header_signin" class="fixed-top">
+        
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+
+            <h1 class="logo">
+                <a href=""></a>
+            </h1>
+            <nav class="nav-menu d-none d-lg-block" id="nav_signin">
+                <ul>
+                    <li class="active"><a href="../maintenance">Home</a></li>
+                    <li><a href="../maintenance">About us</a></li>
+                    <li><a href="../maintenance">Gallery</a></li>
+                    <li><a href="../maintenance">Opportunities</a></li>
+                    <li><a href="../maintenance">Contact</a></li>
+                </ul>
+            </nav>
+            <!-- .nav-menu -->
+
+            <div class="header-social-links" id="signin_icon">
+                <a href="#" class="twitter"><i class="icofont-twitter"></i></a>
+                <a href="#" class="facebook"><i class="icofont-facebook"></i></a>
+                <a href="#" class="instagram"><i class="icofont-instagram"></i></a>
+                <a href="#" class="linkedin"><i class="icofont-linkedin"></i></i></a>
+            </div>
+
+        </div>
+
+    </header>
+    <!-- End Header -->
+
+    <!-- Sign In Div -->
+    <!-- <div class="signin_div">
+        <div class="signin_signup_options">
+            <a href="signin.html" class="signin_left">Company</a>
+            <a href="signup.html" class="signup_right">Mafiosos</a>
+            <a href="" class="signup_right" id="signin_active">Candidate</a>
+        </div>
+        <form action="" class="signin_form">
+            <input type="text" placeholder="Username" id="form_username" required>
+            <input type="password" placeholder="Password" id="form_password" required>
+            <button type="submit" class="form_submit">Sign In</button>
+        </form>
+        <p class="signin_signup_alternatives">Already have an account? Head <a href="signup.html">here</a></p>
+    </div> -->
+
+    <div class="signin_div">
+        <form action="" class="signin_form">
+        <div class="btn-group" role="group" aria-label="Basic example" >
+            <button type="submit" class="btn"><a href="https://www.susmafia.org/apply" class="signin_left" style="font-size: medium;"> Company</a></button>
+            <button type="submit" class="btn"><a href="login" class="signin_mid"  style="font-size: medium;"> Mafioso</a></button>
+            <button type="submit" class="btn"><a href="register" class="signin_left"  style="font-size: medium; " >Candidate</a></button>
+        </div>
+        <center>
+        <div style="padding: 30px;">
+            <p>
+                Want to be a Mafioso? 
+            </p>
+            <p>
+                Want to apply as a candidate? 
+            </p>
+            <p>
+                You are a company? 
+            </p>
+        </div>
+    </center>
+<!-- 
+        <div style="padding-top: 40px;">
+            <input type="text" placeholder="Name" id="form_username" required>
+            <input type="password" placeholder="Password" id="form_password" required>
+        </div>
+        -->
+            <center> <p class="passerror"> <span> &nbsp </span> </p> </center>
+            <button type="submit" class="form_submit" style="padding: 10px;">Go here</button>
+       
+        </form>
+    
+        
+    </div>
+
+    <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+
+    
+           
+   

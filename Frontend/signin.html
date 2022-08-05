@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Sign In</title>
+
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+</head>
+
+<body id="signin_body">
+
+    <!-- ======= Header ======= -->
+    <header id="header_signin" class="fixed-top">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+
+            <h1 class="logo">
+                <a href="index.html"></a>
+            </h1>
+            <nav class="nav-menu d-none d-lg-block" id="nav_signin">
+                <ul>
+                    <li class="active"><a href="">Home</a></li>
+                    <li><a href="">About us</a></li>
+                    <li><a href="">Gallery</a></li>
+                    <li><a href="">Opportunities</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </nav>
+            <!-- .nav-menu -->
+
+            <div class="header-social-links" id="signin_icon">
+                <a href="#" class="twitter"><i class="icofont-twitter"></i></a>
+                <a href="#" class="facebook"><i class="icofont-facebook"></i></a>
+                <a href="#" class="instagram"><i class="icofont-instagram"></i></a>
+                <a href="#" class="linkedin"><i class="icofont-linkedin"></i></i></a>
+            </div>
+
+        </div>
+
+    </header>
+    <!-- End Header -->
+
+    <!-- Sign In Div -->
+    <div class="signin_div" style="left: 200px;">
+        <div class="signin_signup_options">
+            <a href="signin.html" class="signin_left" id="signin_active">Sign In</a>
+            <a href="signup.html" class="signup_right">Sign Up</a>
+        </div>
+        <form action="" class="signin_form">
+            <input type="text" placeholder="Username" id="form_username" required>
+            <input type="password" placeholder="Password" id="form_password" required>
+            <center>
+                <p class="passerror"> <span> &nbsp </span> </p>
+            </center>
+            <button type="submit" class="form_submit">Sign In</button>
+        </form>
+        <p class="signin_signup_alternatives">Do not have an account? Head <a href="signup.html">here</a></p>
+    </div>
+    <div id="loadingImage">
+        <img id="mafiaload" onmouseover="changeimg()" src="assets/img/loadingstartwhite.png" style="width:290px; height:400px; float: right;">
+    </div>
+
+    <script src="{% static 'assets/vendor/jquery/jquery.min.js' %}"></script>
+
+    <script src="{% static 'assets/js/main.js' %}"></script>
+    <script type="text/javascript">
+        function changeimg() {
+            document.getElementById("mafiaload").src = "assets/img/loadingwhite.gif";
+        };
+    </script>
+</body>
+
+</html>
