@@ -6,7 +6,7 @@ One of the most major challenges that most sustainability start-ups encounter is
 ### Proposed Solution
 With MafiaVerse, we aim to bring in together the aspiring candidates and Mafiosos to collaborate together to multiply the impact of sustainability leaders through the goal- oriented objectives.
 
-1. Our primary focus is to
+1.Our primary focus is to
 To make this interaction fun and excitement for the candidates as well as for the mafioso.
 
 2.We also propose a
